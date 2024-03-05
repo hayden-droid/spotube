@@ -9,7 +9,7 @@ $packageArgs = @{
   fileType      = 'exe' #only one of these: exe, msi, msu
   file         = $fileLocation
 
-  softwareName  = 'spotube*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
+  softwareName  = 'Memeitizer Music*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
   validExitCodes= @(0)
 }
