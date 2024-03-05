@@ -23,7 +23,7 @@ export const getServerSideProps: GetServerSideProps<
   NightlyProps
 > = async () => {
   const { data } = await octokit.repos.getReleaseByTag({
-    owner: "KRTirtho",
+    owner: "hayden-droid",
     repo: "spotube",
     tag: "nightly",
   });
@@ -54,17 +54,17 @@ const NightlyDownloads: NextPage<NightlyProps> = (props) => {
           m="5"
         >
           <Heading size="2xl">Nightly Release</Heading>
-          <Text>Download latest & most bleeding edge version of Spotube</Text>
+          <Text>Download latest & most bleeding edge version of Memeitizer Music</Text>
           <Text size="sm" color="red.500" textAlign="justify">
             Disclaimer!: Nightly versions are untested and not the final version
-            of spotube. So it can consists of many hidden or unknown bugs but at
+            of Memeitizer Music. So it can consists of many hidden or unknown bugs but at
             the same time will be opted with latest & greatest features too. So
             use it at your own risk! If you don&apos;t know what you&apos;re
             doing than we recommend you to download the{" "}
             <NavLink href="/" passHref>
               <Anchor color="blue.500">latest stable version of</Anchor>
             </NavLink>{" "}
-            Spotube
+            Memeitizer Music
           </Text>
           <VStack
             p="2"
