@@ -50,7 +50,7 @@ class SettingsAboutSection extends HookConsumerWidget {
             ),
             onPressed: () {
               launchUrlString(
-                "https://opencollective.com/spotube",
+                "https://paypal.me/Memeitizer",
                 mode: LaunchMode.externalApplication,
               );
             },
