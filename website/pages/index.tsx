@@ -33,7 +33,7 @@ const Root = () => {
               }}
             >
               <Heading color={textColor} size="2xl">
-                Spotube
+                Memeitizer Music
               </Heading>
               <Heading color={textColor} size="lg" maxW="500px">
                 A fast, modern, lightweight & efficient Spotify Music Client for
@@ -136,7 +136,7 @@ const Root = () => {
           >
             <Heading>On your Mobile, PC, Tablet everywhere</Heading>
             <Text>
-              Spotube is available for all &quot;Major&quot; Platforms including
+              Memeitizer Music is available for all &quot;Major&quot; Platforms including
               <b> Linux, Android, Windows & MacOS </b>natively unlike Spotify
               Desktop App which uses Electron, that is basically the entire
               Chrome
@@ -148,8 +148,8 @@ const Root = () => {
           <chakra.div maxW="400px">
             <Heading>Open Source, privacy respecting & No ads</Heading>
             <Text>
-              Spotube is an Open Source App being developed & maintained by
-              Kingkor&nbsp;Roy&nbsp;Tirtho & is built by the Contributions of
+              Memeitizer Music is an Open Source App being developed & maintained by
+              Memeitizer Limited & is built by the Contributions of
               the Community and Contributors
             </Text>
           </chakra.div>
@@ -167,7 +167,7 @@ const Root = () => {
           <div>
             <Heading size="lg">Download Now</Heading>
             <Text>
-              Download Spotube for every platform you want. It's available everywhere.
+              Download Memeitizer Music for every platform you want. It's available everywhere.
             </Text>
           </div>
           <DownloadButton />
