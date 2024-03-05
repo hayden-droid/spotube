@@ -1,4 +1,4 @@
-name: Spotube Release Binary
+name: Memeitizer Music Release Binary
 on:
   workflow_dispatch:
     inputs:
@@ -92,7 +92,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           if-no-files-found: error
-          name: Spotube-Release-Binaries
+          name: Memeitizer Music-Release-Binaries
           path: |
             dist/Spotube-windows-x86_64.nupkg
             dist/Spotube-windows-x86_64-setup.exe
@@ -183,7 +183,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           if-no-files-found: error
-          name: Spotube-Release-Binaries
+          name: Memeitizer Music-Release-Binaries
           path: |
             dist/Spotube-linux-x86_64.deb
             dist/Spotube-linux-x86_64.rpm
@@ -260,7 +260,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           if-no-files-found: error
-          name: Spotube-Release-Binaries
+          name: Memeitizer Music-Release-Binaries
           path: |
             build/Spotube-android-all-arch.apk
             build/Spotube-playstore-all-arch.aab
@@ -326,7 +326,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           if-no-files-found: error
-          name: Spotube-Release-Binaries
+          name: Memeitizer Music-Release-Binaries
           path: |
             build/Spotube-macos-universal.dmg
             build/Spotube-macos-universal.pkg
@@ -381,7 +381,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           if-no-files-found: error
-          name: Spotube-Release-Binaries
+          name: Memeitizer Music-Release-Binaries
           path: |
             Spotube-iOS.ipa
 
@@ -403,7 +403,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: Spotube-Release-Binaries
+          name: Memeitizer Musice-Release-Binaries
           path: ./Spotube-Release-Binaries
 
       - name: Install dependencies
@@ -419,7 +419,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           if-no-files-found: error
-          name: Spotube-Release-Binaries
+          name: Memeitizer Music-Release-Binaries
           path: |
             RELEASE.md5sum
             RELEASE.sha256sum
