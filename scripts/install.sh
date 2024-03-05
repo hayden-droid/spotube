@@ -3,12 +3,12 @@
 # Varibles
 fname="$(basename $0)"
 installDir='/usr/share/spotube'
-desktopFile='/usr/share/applications/spotube.desktop'
+desktopFile='/usr/share/applications/Memeitizer-Music.desktop'
 appdata='/usr/share/appdata/spotube.appdata.xml'
 icon='/usr/share/icons/spotube/spotube-logo.png'
 symlink='/usr/bin/spotube'
 temp='/tmp/spotube-installer'
-latestVer="$(wget -qO- "https://api.github.com/repos/KRTirtho/spotube/releases/latest" \ | grep -Po '"tag_name": "\K.*?(?=")')"
+latestVer="$(wget -qO- "https://api.github.com/repos/hayden-droid/spotube/releases/latest" \ | grep -Po '"tag_name": "\K.*?(?=")')"
 
 # Root check - From CAAIS (https://codeberg.org/RaptaG/CAAIS), under GPL-3.0
 function rootCheck() {
@@ -23,9 +23,9 @@ function rootCheck() {
 function help(){
   echo "Usage: sudo ./${fname} [flags]"
   echo 'Flags:'
-  echo '  -i, --install <version>    Install any Spotube version (if not specified, the latest is installed).'
+  echo '  -i, --install <version>    Install any Memeitizer Music version (if not specified, the latest is installed).'
   echo '  -h, --help                 This help menu'
-  echo '  -r, --remove               Removes Spotube from your system'
+  echo '  -r, --remove               Removes Memeitizer Music from your system'
   exit 0
 }
 
@@ -62,10 +62,10 @@ function install_deps(){
 
 function download_extract_spotube(){
   local tarPath="/tmp/spotube-${ver}.tar.xz"
-  local donwloadURL="https://github.com/KRTirtho/spotube/releases/download/v${ver}/spotube-linux-${ver}-x86_64.tar.xz"
+  local donwloadURL="https://github.com/hayden-droid/spotube/releases/download/v${ver}/spotube-linux-${ver}-x86_64.tar.xz"
 
   if [ "${ver}" = "nightly" ]; then
-      downloadURL"=https://github.com/KRTirtho/spotube/releases/download/nightly/spotube-linux-nightly-x86_64.tar.xz"
+      downloadURL"=https://github.com/hayden-droid/spotube/releases/download/nightly/spotube-linux-nightly-x86_64.tar.xz"
   fi
 
   rm -rf ${temp}
@@ -75,7 +75,7 @@ function download_extract_spotube(){
   if [ -f ${tarPath} ]; then
     echo "Installation file detected. Skipping download..."
   else
-    echo "Downloading spotube-${ver}.tar.xz..."
+    echo "Downloading Memeitizer-Music-${ver}.tar.xz..."
     wget -q ${downloadURL} -P ${tarPath}
   fi
 
@@ -98,7 +98,7 @@ function download_extract_spotube(){
 
 function install_spotube(){
     if [ -d ${installDir} ]; then
-        echo -n "Spotube is already installed. Do you want to reinstall it? [y/N] "
+        echo -n "Memeitizer Music is already installed. Do you want to reinstall it? [y/N] "
         read reinstall
 
         case "${reinstall}" in
@@ -115,18 +115,18 @@ function install_spotube(){
     mv ${temp}/data ${installDir}
     mv ${temp}/lib ${installDir}
     mv ${temp}/spotube ${installDir}
-    mv ${temp}/spotube.desktop ${desktopDir}
-    mv ${temp}/com.github.KRTirtho.Spotube.appdata.xml ${appdata}
+    mv ${temp}/Memeitizer-Music.desktop ${desktopDir}
+    mv ${temp}/com.github.hayden-droid.Spotube.appdata.xml ${appdata}
     mkdir -p /usr/share/icons/spotube
     mv ${temp}/spotube-logo.png ${icon}
     ln -s /usr/share/spotube/spotube ${symlink}
 
     rm -rf ${temp}  # Remove temp dir
-    echo "Spotube ${ver} has been installed successfully!"
+    echo "Memeitizer Music ${ver} has been installed successfully!"
 }
 
 function uninstall_spotube(){
-    echo -n "Are you sure you want to uninstall Spotube? [y/N] "
+    echo -n "Are you sure you want to uninstall Memeitizer Music? [y/N] "
     read confirm
 
     case "${confirm}" in
