@@ -48,7 +48,7 @@ const Blog: NextPage<Props> = ({ posts }) => {
   return (
     <VStack mx="5" my="5" spacing="7">
       <Head>
-        <title>Spotube - Blogs</title>
+        <title>Memeitizer Music - Blogs</title>
       </Head>
       {posts.map((post) => {
         return (
