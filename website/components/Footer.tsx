@@ -36,7 +36,7 @@ const Footer = () => {
           color: "gray.700",
         }}
       >
-        Spotube
+        Memeitizer Music
       </chakra.a>
 
       <chakra.p
@@ -49,7 +49,7 @@ const Footer = () => {
           color: "white",
         }}
       >
-        © {new Date().getFullYear()}, Spotube. All rights reserved
+        © {new Date().getFullYear()}, Memeitizer Music. All rights reserved
       </chakra.p>
 
       <Flex mx="-2">
@@ -57,7 +57,7 @@ const Footer = () => {
           colorScheme="gray"
           as={Link}
           aria-label="Github Link"
-          href="https://github.com/KRTirtho/spotube"
+          href="https://github.com/hayden-droid/spotube"
           target="_blank"
           icon={<FaGithub />}
           variant="link"
@@ -66,18 +66,9 @@ const Footer = () => {
           colorScheme="gray"
           as={Link}
           aria-label="Twitter Link"
-          href="https://twitter.com/@KrTirtho"
+          href="https://twitter.com/@memeitizer"
           target="_blank"
           icon={<FiTwitter />}
-          variant="link"
-        />
-        <IconButton
-          colorScheme="gray"
-          as={Link}
-          aria-label="Reddit Link"
-          href="https://reddit.com/r/FlutterDev/search/?q=spotube&restrict_sr=1&sr_nsfw="
-          target="_blank"
-          icon={<FaRedditAlien />}
           variant="link"
         />
       </Flex>
