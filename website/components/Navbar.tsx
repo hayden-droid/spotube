@@ -52,10 +52,10 @@ const Navbar = () => {
                 layout="fixed"
               />
             </NavLink>
-            <VisuallyHidden>Spotube</VisuallyHidden>
+            <VisuallyHidden>Memeitizer Music</VisuallyHidden>
             <NavLink href="/" passHref>
               <Heading p="2" as="a" size="lg" mr="2">
-                Spotube
+                Memeitizer Music
               </Heading>
             </NavLink>
           </Flex>
@@ -86,7 +86,7 @@ const Navbar = () => {
               </NavLink>
               <Button
                 as={Link}
-                href="https://github.com/KRTirtho/spotube"
+                href="https://github.com/hayden-droid/spotube"
                 bgColor="black"
                 color="white"
                 target="_blank"
@@ -102,28 +102,7 @@ const Navbar = () => {
                 Give us a ⭐ on
               </Button>
             </HStack>
-            <Button
-              size={{
-                base: "sm",
-                md: "sm",
-                lg: "md",
-              }}
-              as={Link}
-              href="https://opencollective.com/spotube"
-              bgColor="pink.100"
-              color="pink.500"
-              _hover={{
-                bgColor: "pink.200",
-                textDecor: "none",
-              }}
-              _active={{
-                bgColor: "pink.100",
-              }}
-              rightIcon={<BsHeartFill />}
-              target="_blank"
-            >
-              Donate us
-            </Button>
+            
             <IconButton
               variant="ghost"
               icon={colorMode == "light" ? <GoLightBulb /> : <FiSun />}
@@ -190,7 +169,7 @@ const Navbar = () => {
                 </NavLink>
                 <Button
                   as={Link}
-                  href="https://github.com/KRTirtho/spotube"
+                  href="https://github.com/hayden-droid/spotube"
                   bgColor="black"
                   color="white"
                   target="_blank"
