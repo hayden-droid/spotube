@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: KRTirtho/com.github.KRTirtho.Spotube
+          repository: hayden-droid/com.github.hayden-droid.Spotube
           token: ${{ secrets.FLATHUB_TOKEN }}
 
       - uses: actions/checkout@v4
