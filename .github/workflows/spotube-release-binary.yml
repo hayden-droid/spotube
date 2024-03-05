@@ -66,12 +66,7 @@ jobs:
         if: ${{ inputs.channel == 'nightly' }}
         run: echo '${{ secrets.DOTENV_NIGHTLY }}' > .env
 
-      - name: Generating Secrets
-        run: |
-          flutter config --enable-windows-desktop
-          flutter pub get
-          dart run build_runner build --delete-conflicting-outputs --enable-experiment=records,patterns
-
+      
       - name: Build Windows Executable
         run: |
           dart pub global activate flutter_distributor
@@ -231,16 +226,8 @@ jobs:
         if: ${{ inputs.channel == 'nightly' }}
         run: echo '${{ secrets.DOTENV_NIGHTLY }}' > .env
 
-      - name: Generate Secrets
-        run: |
-          flutter pub get
-          dart run build_runner build --delete-conflicting-outputs --enable-experiment=records,patterns
-
-      - name: Sign Apk
-        run: |
-          echo '${{ secrets.KEYSTORE }}' | base64 --decode > android/app/upload-keystore.jks
-          echo '${{ secrets.KEY_PROPERTIES }}' > android/key.properties
-
+      
+      
       - name: Build Apk
         run: |
           flutter build apk --flavor ${{ inputs.channel }}          
@@ -367,11 +354,7 @@ jobs:
         if: ${{ inputs.channel == 'nightly' }}
         run: echo '${{ secrets.DOTENV_NIGHTLY }}' > .env
 
-      - name: Generate Secrets
-        run: |
-          flutter pub get
-          dart run build_runner build --delete-conflicting-outputs --enable-experiment=records,patterns
-
+      
       - name: Build iOS iPA
         run: |
           flutter build ios --release --no-codesign --flavor ${{ inputs.channel }}  
