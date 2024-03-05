@@ -3,28 +3,28 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
-    <id>spotube</id>
+    <id>Memeitizer Music</id>
     <version>%{{SPOTUBE_VERSION}}%</version>
-    <packageSourceUrl>https://github.com/KRTirtho/spotube/tree/master/choco-struct</packageSourceUrl>
-    <owners>Kingkor Roy Tirtho</owners>
+    <packageSourceUrl>https://github.com/hayden-droid/spotube/tree/master/choco-struct</packageSourceUrl>
+    <owners>Memeitizer Limited</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <title>spotube (Install)</title>
-    <authors>Kingkor Roy Tirtho</authors>
-    <projectUrl>https://github.com/KRTirtho/spotube/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/KRTirtho/spotube/7edb0bb834eb18c05551e30a891720a6abf53dbe/assets/spotube-logo.png</iconUrl>
-    <copyright>2022 Spotube</copyright>
+    <title>Memeitizer Music (Install)</title>
+    <authors>Memeitizer Limited</authors>
+    <projectUrl>https://github.com/hayden-droid/spotube/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/hayden-droid/spotube/7edb0bb834eb18c05551e30a891720a6abf53dbe/assets/spotube-logo.png</iconUrl>
+    <copyright>2024 Memeitizer Music</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://github.com/KRTirtho/spotube/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/hayden-droid/spotube/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/KRTirtho/spotube</projectSourceUrl>
-    <docsUrl>https://github.com/KRTirtho/spotube#readme</docsUrl>
-    <bugTrackerUrl>https://github.com/KRTirtho/spotube/issues/new</bugTrackerUrl>
-    <tags>spotube music audio spotify youtube flutter</tags>
+    <projectSourceUrl>https://github.com/hayden-droid/spotube</projectSourceUrl>
+    <docsUrl>https://github.com/hayden-droid/spotube#readme</docsUrl>
+    <bugTrackerUrl>https://github.com/hayden-droid/spotube/issues/new</bugTrackerUrl>
+    <tags>Memeitizer Music music audio spotify youtube flutter</tags>
     <summary>🎧 Open source Spotify client that doesn't require Premium nor uses Electron! Available for both desktop &amp; mobile! </summary>
     <description>
-    Spotube is a Flutter based lightweight spotify client. It utilizes the power 
+    Memeitizer Music is a Flutter based lightweight spotify client. It utilizes the power 
     of Spotify  &amp; Youtube's public API  &amp; creates a hazardless, performant  &amp; resource
     friendly User Experience
 
@@ -41,7 +41,7 @@
     - Time synced lyrics
     - Downloadable tracks
     </description>
-    <releaseNotes>https://github.com/KRTirtho/spotube/releases/tag/v%{{SPOTUBE_VERSION}}%</releaseNotes>
+    <releaseNotes>https://github.com/hayden-droid/spotube/releases/tag/v%{{SPOTUBE_VERSION}}%</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
