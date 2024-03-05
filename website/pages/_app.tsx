@@ -115,7 +115,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
-          <title>Spotube</title>
+          <title>Memeitizer Music</title>
         </Head>
         <NextNProgress color="#00a7a4" />
         <chakra.div
