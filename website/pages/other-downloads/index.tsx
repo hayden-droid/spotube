@@ -27,7 +27,7 @@ function OtherDownloads() {
           <VStack spacing="2" align="start">
             <Heading size="2xl">Other ways to install?</Heading>
             <Heading size="md">
-              Here&apos;s some alternative ways & versions of Spotube that you
+              Here&apos;s some alternative ways & versions of Memeitizer Music that you
               can install try out
             </Heading>
           </VStack>
