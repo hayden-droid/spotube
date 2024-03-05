@@ -52,7 +52,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
     "public, s-maxage=10, stale-while-revalidate=59"
   );
   const { data } = await octokit.repos.listReleases({
-    owner: "KRTirtho",
+    owner: "hayden-droid",
     repo: "spotube",
   });
   const releaseResponse: ReleaseResponse[] = data
@@ -83,7 +83,7 @@ const StableDownloads: NextPage<Props> = ({ data }) => {
         <Heading size="xl">Previous Versions</Heading>
         <Text my="5">
           If any of your version is not working correctly than you can download
-          & use previous versions of Spotube too
+          & use previous versions of Memeitizer Music too
         </Text>
 
         <VStack
