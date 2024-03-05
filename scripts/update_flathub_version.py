@@ -5,8 +5,8 @@ import sys
 import requests
 import yaml
 
-REPO = "KRTirtho/spotube"
-YAML_FILENAME = "com.github.KRTirtho.Spotube.yml"
+REPO = "hayden-droid/spotube"
+YAML_FILENAME = "com.github.hayden-droid.Spotube.yml"
 
 config = None
 with open(YAML_FILENAME, mode="r", encoding="utf-8") as input:
