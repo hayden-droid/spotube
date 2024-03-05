@@ -61,7 +61,7 @@ class AboutSpotube extends HookConsumerWidget {
                             colon,
                             Hyperlink(
                               context.l10n.kingkor_roy_tirtho,
-                              "https://github.com/KRTirtho",
+                              "https://github.com/hayden-droid",
                             )
                           ],
                         ),
@@ -84,8 +84,8 @@ class AboutSpotube extends HookConsumerWidget {
                             Text(context.l10n.repository),
                             colon,
                             const Hyperlink(
-                              "github.com/KRTirtho/spotube",
-                              "https://github.com/KRTirtho/spotube",
+                              "github.com/hayden-droid/spotube",
+                              "https://github.com/hayden-droid/spotube",
                             ),
                           ],
                         ),
@@ -95,7 +95,7 @@ class AboutSpotube extends HookConsumerWidget {
                             colon,
                             const Hyperlink(
                               "BSD-4-Clause",
-                              "https://raw.githubusercontent.com/KRTirtho/spotube/master/LICENSE",
+                              "https://raw.githubusercontent.com/hayden-droid/spotube/master/LICENSE",
                             ),
                           ],
                         ),
@@ -104,8 +104,8 @@ class AboutSpotube extends HookConsumerWidget {
                             Text(context.l10n.bug_issues),
                             colon,
                             const Hyperlink(
-                              "github.com/KRTirtho/spotube/issues",
-                              "https://github.com/KRTirtho/spotube/issues",
+                              "github.com/hayden-droid/spotube/issues",
+                              "https://github.com/hayden-droid/spotube/issues",
                             ),
                           ],
                         ),
@@ -119,7 +119,7 @@ class AboutSpotube extends HookConsumerWidget {
                 cursor: SystemMouseCursors.click,
                 child: GestureDetector(
                   onTap: () => launchUrl(
-                    Uri.parse("https://discord.gg/uJ94vxB6vg"),
+                    Uri.parse("https://snapchat.com/add/h.drysdale22"),
                     mode: LaunchMode.externalApplication,
                   ),
                   child: const UniversalImage(
@@ -141,12 +141,12 @@ class AboutSpotube extends HookConsumerWidget {
                     child: GestureDetector(
                       onTap: () {
                         launchUrl(
-                          Uri.parse("https://www.buymeacoffee.com/krtirtho"),
+                          Uri.parse("https://paypal.me/Memeitizer"),
                           mode: LaunchMode.externalApplication,
                         );
                       },
                       child: SvgPicture.network(
-                        "https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=krtirtho&button_colour=FF5F5F&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00",
+                        "https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=Memeitizer&button_colour=FF5F5F&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00",
                         height: 45,
                       ),
                     ),
@@ -157,7 +157,7 @@ class AboutSpotube extends HookConsumerWidget {
                       onTap: () {
                         launchUrl(
                           Uri.parse(
-                            "https://opencollective.com/spotube",
+                            "https://paypal.me/Memeitizer",
                           ),
                           mode: LaunchMode.externalApplication,
                         );
@@ -173,7 +173,7 @@ class AboutSpotube extends HookConsumerWidget {
                     child: GestureDetector(
                       onTap: () {
                         launchUrl(
-                          Uri.parse("https://patreon.com/krtirtho"),
+                          Uri.parse("https://paypal.me/Memeitizer"),
                           mode: LaunchMode.externalApplication,
                         );
                       },
