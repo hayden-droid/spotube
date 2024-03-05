@@ -31,9 +31,9 @@ class Discord extends ChangeNotifier {
         state: "Vibing in Music",
         startTimeStamp: DateTime.now().millisecondsSinceEpoch,
         largeImageKey: "spotube-logo-foreground",
-        largeImageText: "Spotube",
+        largeImageText: "Memeitizer Music",
         smallImageKey: "spotube-logo-foreground",
-        smallImageText: "Spotube",
+        smallImageText: "Memeitizer Music",
       ),
     );
   }
