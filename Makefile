@@ -7,10 +7,10 @@ MIRRORLIST=${PWD}/build/mirrorlist
 tar:
 		mkdir -p $(TEMP_DIR)\
 		&& cp -r $(BUNDLE_DIR)/* $(TEMP_DIR)\
-		&& cp linux/spotube.desktop $(TEMP_DIR)\
+		&& cp linux/Memeitizer-Music.desktop $(TEMP_DIR)\
 		&& cp assets/spotube-logo.png $(TEMP_DIR)\
-		&& cp linux/com.github.KRTirtho.Spotube.appdata.xml $(TEMP_DIR)\
-		&& tar -cJf build/spotube-linux-${VERSION}-${PKG_ARCH}.tar.xz -C $(TEMP_DIR) .\
+		&& cp linux/com.github.hayden-droid.Spotube.appdata.xml $(TEMP_DIR)\
+		&& tar -cJf build/Memeitizer-Music-linux-${VERSION}-${PKG_ARCH}.tar.xz -C $(TEMP_DIR) .\
 		&& rm -rf $(TEMP_DIR)
 
 aursrcinfo:
@@ -34,11 +34,11 @@ inno:
 		 powershell .\build\iscc\iscc.exe scripts\windows-setup-creator.iss
 
 choco:
-			powershell cp dist\Spotube-windows-x86_64-setup.exe choco-struct\tools
+			powershell cp dist\Memeitizer-Music-windows-x86_64-setup.exe choco-struct\tools
 			powershell choco pack .\choco-struct\spotube.nuspec  --outputdirectory dist
 
 apk:
-		mv build/app/outputs/apk/release/app-release.apk build/Spotube-android-all-arch.apk
+		mv build/app/outputs/apk/release/app-release.apk build/Memeitizer-Music-android-all-arch.apk
 
 gensums:
 				sh -c scripts/gensums.sh
