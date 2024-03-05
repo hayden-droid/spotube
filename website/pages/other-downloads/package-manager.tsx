@@ -20,8 +20,8 @@ export default function PackageManagerPage() {
       <VStack align="start" w="full" maxW="2xl">
         <Heading>Installation using Package Managers</Heading>
         <Text>
-          If you don&apos;t want to download the binary of Spotube, you can use
-          various package managers to install Spotube too (only Windows & Linux
+          If you don&apos;t want to download the binary of Memeitizer Music, you can use
+          various package managers to install Memeitizer Music too (only Windows & Linux
           now)
         </Text>
         <Heading size="lg" pt="5">
@@ -37,12 +37,12 @@ export default function PackageManagerPage() {
           Make sure Flatpak is installed in your Linux device & Run the
           following command in the terminal:
         </Text>
-        <CodeBlock>$ flatpak install com.github.KRTirtho.Spotube</CodeBlock>
+        <CodeBlock>$ flatpak install com.github.hayden-droid.Spotube</CodeBlock>
         <Heading size="md" pt="3">
           AUR
         </Heading>
         <Text>
-          If you&apos;re an Arch Linux user, you can also install Spotube from
+          If you&apos;re an Arch Linux user, you can also install Memeitizer Music from
           AUR. Make sure you have <Code>yay</Code> or <Code>pamac</Code> or{" "}
           <Code>paru</Code> installed in your system. And Run the Following
           command in the Terminal:
@@ -86,22 +86,22 @@ export default function PackageManagerPage() {
           WinGet
         </Heading>
         <Text>
-          Yes, Spotube is also available in the Official Windows PackageManager
+          Yes, Memeitizer Music is also available in the Official Windows PackageManager
           WinGet. Make sure you have WinGet installed in your Windows machine
           and run following in a Terminal:
         </Text>
-        <CodeBlock>$ winget install --id KRTirtho.Spotube</CodeBlock>
+        <CodeBlock>$ winget install --id hayden-droid.Spotube</CodeBlock>
         <Box w="full">
           {/* <DisplayAd slot="9501208974" /> */}
         </Box>
         <Heading pt="5">Install from App Stores</Heading>
         <Heading size="md">Android (F-Droid)</Heading>
         <Text>
-          Spotube for Android is available in the F-Droid repositories too. So
+          Memeitizer Music for Android is available in the F-Droid repositories too. So
           you can install it directly from F-Droid Android application too
         </Text>
         <Link
-          href="https://f-droid.org/packages/oss.krtirtho.spotube/"
+          href="https://f-droid.org/packages/oss.memeitizer.spotube/"
           target="_blank"
         >
           <Image
