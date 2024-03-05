@@ -55,7 +55,7 @@ function install_deps(){
     #    # JsonCpp
     #    wget https://github.com/open-source-parsers/jsoncpp/tarball/master -O jsoncpp.tar.gz
     #    tar -xf jsoncpp.tar.gz && cd open-source-parsers-jsoncpp-*
-        echo 'You have to install some dependancies manually in order for Spotube to work.'
+        echo 'You have to install some dependancies manually in order for Memeitizer Music to work.'
         echo "The deps are the following: ${rpmDeps}"
     fi
 }
