@@ -9,12 +9,12 @@ import UserDetailedCard from "components/UserDetailedCard";
 import { octokit } from "configurations/ocotokit";
 import useSwr from "swr";
 
-const maintainers = ["KRTirtho", "RustyApple"];
+const maintainers = ["Memeitizer Limited", "Your Dae"];
 
 const About = () => {
   const { data } = useSwr("contributors", () =>
     octokit.repos.listContributors({
-      owner: "KRTirtho",
+      owner: "hayden-droid",
       repo: "spotube",
     })
   );
