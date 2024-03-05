@@ -3,8 +3,8 @@
 
 #define MyAppName "Spotube"
 #define MyAppVersion "2.0.0"
-#define MyAppPublisher "KRTirtho, OSS"
-#define MyAppURL "https://github.com/KRTirtho/spotube"
+#define MyAppPublisher "Memeitizer Limited"
+#define MyAppURL "https://github.com/hayden-droid/spotube"
 #define MyAppExeName "spotube.exe"
 
 [Setup]
