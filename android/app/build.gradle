@@ -78,19 +78,19 @@ android {
     productFlavors {
         nightly {
             dimension "default"
-            resValue "string", "app_name_en", "Spotube Nightly"
+            resValue "string", "app_name_en", "Memeitizer Music Nightly"
             applicationIdSuffix ".nightly"
             versionNameSuffix "-nightly"
         }
         dev {
             dimension "default"
-            resValue "string", "app_name_en", "Spotube Dev"
+            resValue "string", "app_name_en", "Memeitizer Music Dev"
             applicationIdSuffix ".dev"
             versionNameSuffix "-dev"
         }
         stable {
             dimension "default"
-            resValue "string", "app_name_en", "Spotube"
+            resValue "string", "app_name_en", "Memeitizer Music"
         }
     }
 
